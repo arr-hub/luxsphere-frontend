@@ -1,1 +1,38 @@
-<!-- profile.html placeholder -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LuxSphere - Profile</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="business.html">Business</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><button id="themeToggle">Toggle Theme</button></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Your Profile</h1>
+    <form id="editProfile">
+      <label>Username: <input type="text" id="username"></label>
+      <label>About: <textarea id="about"></textarea></label>
+      <label>Theme:
+        <select id="themeSelect">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </label>
+      <button type="submit">Save</button>
+    </form>
+    <h2>Verified Account</h2>
+    <p>Only you can edit your profile info. Visitors will see public info.</p>
+  </main>
+</body>
+</html>

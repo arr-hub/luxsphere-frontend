@@ -1,1 +1,35 @@
-<!-- business.html placeholder -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LuxSphere - Business</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="business.html">Business</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><button id="themeToggle">Toggle Theme</button></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Business Page</h1>
+    <form id="addProduct" enctype="multipart/form-data">
+      <label>Title: <input type="text" name="title"></label>
+      <label>Description: <textarea name="description"></textarea></label>
+      <label>Price: <input type="number" name="price"></label>
+      <label>Image: <input type="file" name="image"></label>
+      <button type="submit">Add Product</button>
+    </form>
+    <section id="productList">
+      <!-- Products will load here -->
+    </section>
+  </main>
+</body>
+</html>
